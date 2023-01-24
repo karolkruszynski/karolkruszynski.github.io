@@ -4,31 +4,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
+ <script>
+import * as time from 'time';
+var os_x_cale, os_z_cale, wybor_mebla, wynik_cm_os_x, wynik_cm_os_z, wynik_os_x, wynik_os_z;
+console.log(" Hej oto program do obliczania miarek do modu\u0142\u00f3w umieszczanych w sectional builderze");
+console.log(" Wybierz dla jakiego mebla chcesz uzyska\u0107 wymiar:\n");
+console.log(" 1.  Zwyk\u0142y - nie rotacyjny mebel\n");
+console.log(" 2.  Rotacyjny mebel - CORNER \n");
+wybor_mebla = Number.parseInt(input());
 
-<div class="w3-light-grey w3-padding-32 w3-center">
-  <h1 class="w3-jumbo">Daily Ping</h1>
-</div>
+if (wybor_mebla === 1) {
+  console.log(" Podaj wymiar X - szeroko\u015b\u0107 - width ");
+  console.log(" Podaj w wymiar w calach - INCH");
+  os_x_cale = Number.parseFloat(input());
+  wynik_os_x = os_x_cale * 2.54;
+  wynik_cm_os_x = wynik_os_x / 2;
+  console.log(wynik_cm_os_x);
+  console.log(" KIND LEFT: -" + wynik_cm_os_x.toString());
+  console.log(" KIND RIGHT: " + wynik_cm_os_x.toString());
+} else {
+  console.log(" Podaj wymiar X - szeroko\u015b\u0107 - width ");
+  console.log(" Podaj w wymiar w calach - INCH");
+  os_x_cale = Number.parseFloat(input());
+  wynik_os_x = os_x_cale * 2.54;
+  console.log(" Podaj wymiar z - g\u0142\u0119boko\u015b\u0107 - deep ");
+  console.log(" Podaj w wymiar w calach - INCH");
+  os_z_cale = Number.parseFloat(input());
+  wynik_os_z = os_z_cale * 2.54;
+  wynik_cm_os_z = wynik_os_z / 2;
+  wynik_cm_os_x = wynik_os_x / 2;
+  console.log(" KIND LEFT: -" + wynik_cm_os_z.toString());
+  console.log(" KIND RIGHT: " + wynik_cm_os_x.toString());
+}
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third w3-justify">
-    <h2>Empty Notebook Found</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="w3-third w3-justify">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   </div>
-  <div class="w3-third w3-justify">
-    <h2>Very New News!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</div>
+time.sleep(1000);
+  </script>
 
 </body>
 </html>
